@@ -1,0 +1,59 @@
+\documentclass[notitlepage,11pt]{article} % para articulo
+
+% Este es un comentario <- Los comentarios comienzan con % 
+% todo lo que se escriba hasta el final de la linea será ignorado <- Este es otro comentario
+
+%Lenguaje del documento
+\usepackage[spanish]{babel} % silabea palabras castellanas <- Puedo poner comentarios para explicar de que va este comando en la misma línea
+
+%Encoding
+\usepackage[T1]{fontenc} % Encoding de salida al pdf
+
+%Hipertexto
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref} % navega por el doc: hipertexto y links
+
+%simbolos matemáticos
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% permite insertar gráficos, imágenes y figuras, en pdf o en eps
+\usepackage{graphicx} 
+\usepackage{epstopdf}
+
+% geometría del documento, encabezados y pies de páginas, márgenes
+\usepackage{geometry}     
+\geometry{letterpaper}       % ... o a4paper o a5paper o ... 
+\usepackage{fancyhdr} % encabezados y pies de pg
+\pagestyle{fancy}
+\chead{\bfseries {Aquí va el Título del documento}}
+\lhead{} % si se omite coloca el nombre de la seccion
+\rhead{fecha del doc}
+\lfoot{\it Autor  }
+\cfoot{Universidad Industrial de Santander}
+\rfoot{\thepage}
+%margenes
+\voffset = -0.25in
+\textheight = 8.0in
+\textwidth = 6.5in
+\oddsidemargin = 0.in
+\headheight = 20pt
+\headwidth = 6.5in
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0,5pt}
+
+\begin{document}
+\title{El título}
+\author{Los autores}
+
+\date{\today}
+\maketitle %Genera el título del documento
+
+\end{document}
+
+%Todo lo que escriba aquí será ignorado, aunque no fuera un comentario...
+
+
+
+
+
